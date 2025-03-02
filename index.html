@@ -2,134 +2,177 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        header nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
-
-        header nav ul li {
-            margin: 0 15px;
-        }
-
-        header nav ul li a {
-            color: #cfc9c9;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        header nav ul li a:hover{
-            color: #fff;
-        }
-        h1 {
-            margin-top: 10px;
-        }
-
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .about,
-        .projects,
-        .contact {
-            background-color: #fff;
-            margin: 1rem 0;
-            border: 2px solid #000;
-        }
-        .about h2,
-        .projects h2,
-        .contact h2{
-            margin-top: -32px;
-            background-color:#333;
-            color: #fff;
-        }
-        .about p,
-        .projects p,
-        .contact p{
-            margin: 12px 0 0 0;
-        }
-        .home p {
-            font-size: 20px;
-            margin-top: 1rem;
-        }
-
-        .projects {
-            margin-top: 1rem 0;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-    </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1> PORTFOLIO</h1>
-    </header>
 
-    <section id="home" class="home">
-        <h3>Hi, I'm Meenakshi Negi</h3>
-        <p>A Web Developer</p>
-    </section>
+  <header class="sticky-top">
+    <nav>
+      <ul>
+        <li><a href="#home"><b>HOME</b></a></li>
+        <li><a href="#about"><b>ABOUT</b></a></li>
+        <li><a href="#project"><b>PROJECT</b></a></li>
+        <li><a href="#contact"><b>CONTACT</b></a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about" class="about container-fluid">
-        <h2>ABOUT ME</h2>
-        <p>I'm a web developer. I'm skilled in HTML, CSS, JavaScript, Django, Python and My SQL.</p>
-    </section>
-    <section id="project" class="projects container-fluid">
-        <h2>PROJECTS</h2>
-        <a href="">firstwebsite-dev.netlify.app/</a>
-    </section>
-    <section id="contact" class="contact container-fluid">
-        <h2>CONTACT</h2>
-        <p>Email: meenakshinegi995@gmail.com</p>
-    </section>
+  <section id="home" class="home">
+    <div class="card text-light border-0 mb-3">
+      <div class="card-body" style="background-color: #210325;">
+        <h2>Welcome To My <span class="about_cnt">Portfolio</span></h2>
+        <h4>Hi, I'm <span class="about_cnt">Meenakshi Negi</span>, a web developer.</h4>
+      </div>
+    </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Meenakshi Negi. All Right Reserved.</p>
-    </footer>
+  <section id="about" class="about">
+    <h2 class="mt-3 mb-3">ABOUT <span class="about_cnt">ME</span></h2>
+    <div class="card mb-3 para" style="background-color: #210325;">
+      <div class="card-body">
+        <div class="para2 border-0">
+          <p>I'm a Full Stack Developer, constructed dynamic web applications
+            utilizing HTML, CSS and JavaScript in frontend , Python and Django in backend and MySQL in database
+            showcasing
+            full stack capabilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+
+  <section class="skills">
+    <h2 class="mb-5">SKILLS</h2>
+    <div class="col-lg-12 col-sm-12 skill">
+      <div class="skill_item">
+        <div class="col-lg-2 col-md-2 col-sm-6 icon">
+          <img height="60px" width="60px" class="mt-3" src="https://icon-library.com/images/html5-icon/html5-icon-13.jpg" alt="HTML">
+          <h6><b>HTML</b></h6>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 icon">
+          <img height="50px" width="50px" class="mt-3"  src="https://cdn4.iconfinder.com/data/icons/iconsimple-programming/512/css-512.png" alt="CSS">
+          <h6><b>CSS</b></h6>
+        </div>
+      </div>
+      <div class="skill_item">
+        <div class="col-lg-2 col-md-2 col-sm-6 icon">
+          <img height="50px" width="80px" class="mt-3" src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Emblem.png" alt="JavaScript">
+          <h6><b>JavaScript</b></h6>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 icon">
+          <img height="50px" width="50px" class="mt-3"  src="https://cdn-images-1.medium.com/v2/resize:fit:1200/1*OmGjJBpdX-94uDdEatFwjA.png" alt="Python">
+          <h6><b>Python</b></h6>
+        </div>
+      </div>
+      <div class="skill_item">  
+        <div class="col-lg-2 col-md-2 col-sm-6 icon">
+          <img height="50px" width="50px" class="mt-3"  src="https://seekicon.com/free-icon-download/django_3.png" alt="Django">
+          <h6><b>Django</b></h6>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 icon">
+          <img height="50px" width="70px" class="mt-3"  src="https://th.bing.com/th/id/R.255b77e251b19a6d0600634d2ff9b006?rik=k3edqLFjWyFC1Q&riu=http%3a%2f%2fpngimg.com%2fuploads%2fmysql%2fmysql_PNG22.png&ehk=ffHItQzD%2fUaKL%2bPOiED3dtDd9YUI%2fJRUzYL5raCZnR8%3d&risl=&pid=ImgRaw&r=0" alt="MySQL">
+          <h6 class="icon_list"><b>MySQL</b></h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="project" class="projects mt-2">
+    <h2>PROJECTS</h2>
+    <div class="card mb-3 mt-5 para" style="background-color: #210325;">
+      <div class="card-body">
+        <a href="https://firstwebsite-dev.netlify.app/">firstwebsite-dev.netlify.app/i</a>
+        <div class="para2 border-0">
+          <p>This is the website of a software company called Arotech, and it consists of 5 pages, namely Home,
+            About, Services, Pricing and Contact. The About page will highlight the various projects undertaken
+            by the company, while the Services page will list out the different services offered by Arotech.
+            The Pricing page will provide details one the company's pricing plans, including both monthly and
+            yearly options, and the Contact page will have the company's contact details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>CONTACT</h2>
+    <div class="row  mt-5">
+      <div class="p-4 contact_bg bg_3 col-lg-5 col-md-6 col-sm-12 me-4 ms-2">
+        <div class="mt-3 row-items d-flex">
+          <div class="bgicons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#df14ce"
+              class="mt-2 ms-4 bgicon bi bi-envelope" viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+            </svg>
+          </div>
+          <div class="mt-2 ms-3 d-inline">
+            <p>meenakshinegi995@gmail.com</p>
+          </div>
+        </div>
+        <div class="mt-3 row-items d-flex">
+          <div class="bgicons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#df14ce"
+              class="mt-2 ms-4 bgicon bi bi-linkedin" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+            </svg>
+          </div>
+          <div class="mt-2 ms-3 d-inline link1">
+            <a
+              href="https://www.linkedin.com/in/meenakshi-negi-2a8790352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <p class="">view</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact_bg bg_2 col-lg-6 col-md-6 col-sm-12">
+        <form class="p-4">
+          <div class="row">
+            <div class="mb-3 col-lg-12 ">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control form1 text-light" id="exampleInputEmail1" aria-label="Name"
+                style="background-color: #210325;">
+            </div>
+            <div class="mb-3 col-lg-6">
+              <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
+              <input type="email" class="form-control form1 text-light" id="exampleInputEmail1" aria-label="email"
+                style="background-color: #210325;">
+            </div>
+            <div class="mb-3 col-lg-6">
+              <label for="exampleInputPassword1" class="form-label">Enter Phone</label>
+              <input type="number" class="form-control form1 text-light" id="exampleInputPassword1"
+                style="background-color: #210325;" aria-label="number">
+            </div>
+            <div class="mb-3 col-lg-12">
+              <textarea class="form-control form1" placeholder="write a message" id="exampleFormControlTextarea1"
+                rows="3" style="background-color: #210325;"></textarea>
+            </div>
+            <div class="d-grid gap-2 col-8 mx-auto justify-content-center">
+              <button type="submit" class=" button_btn col-lg-12">
+                <a href="mailto:meenakshinegi995@gmail.com" class="border-0">Send Mail</a>
+              </button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Meenakshi Negi. All Right Reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
 </body>
