@@ -121,9 +121,12 @@ section {
     color: var(--first-color--);
 }
 .contact_bg{
-    border: 1px solid var(--fifth-color--);
-    box-shadow: 0 0 4px var(--first-color--);
+    border: 2px solid var(--fifth-color--);
+    box-shadow: 0 0 6px var(--first-color--);
     border-radius: 20px;
+}
+.contact_bg:hover{
+    box-shadow: 0 0 10px var(--first-color--);
 }
 @media (max-width:768px) {
     .bg_2 {
@@ -142,6 +145,10 @@ section {
     background-color: var(--second-color--);
     border-radius: 5px;
     padding: 4px 6px;
+}
+.button_btn:hover{
+    border: 2px solid var(--fifth-color--);
+    box-shadow: 0 0 6px var(--first-color--);
 }
 .button_btn a{
     text-decoration: none;
@@ -170,7 +177,9 @@ footer {
     color: var(--fifth-color--);
     box-shadow: 0 0 5px var(--first-color--);
 }
-
+.para:hover{
+    box-shadow: 0 0 10px var(--first-color--);
+}
 @media (max-width:768px) {
     .para {
         margin:40px 0 !important;
@@ -227,5 +236,8 @@ footer {
     width: 130px;
     height: 120px;
     margin:10px 20px;
+}
+.icon:hover{
+    box-shadow: 0 0 10px var(--first-color--);
 }
 
