@@ -1,9 +1,10 @@
 :root {
     --primary-color--: #210325;
     --first-color--: #df14ce;
-    --fifth-color--: #ffffff;
+    --fifth-color--: #f2f2f2;
     --secondary-color--:#61126b;
     --second-color--:#9641a1;
+    --p-color--:210325;
 }
 
 * {
@@ -14,7 +15,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0 20px;
     line-height: 1.6;
     background-color: var(--primary-color--);
     color: var(--fifth-color--);
@@ -38,11 +38,15 @@ header nav ul {
     padding: 10px 0;
     background-color: var(--primary-color--);
     box-shadow: 0 0 4px var(--first-color--);
+    margin-top: -10px;
 
 }
 @media (max-width:768px) {
     header nav ul {
-        margin-left: -5px;
+        align-content: center;
+        width: 350px;
+        margin-top: -10px !important;
+        margin: 0 20px !important;
     }
 }
 header nav ul li {
@@ -69,40 +73,48 @@ section {
         height: 100vh;
     }
 }
-
+.home_text{
+    color: var(--fifth-color--);
+}
 .projects a {
     color: var(--first-color--);
 }
 .home{
-    height: 30vh;
+    height: 60vh;
 }
 
 .projects{
-    margin: 0 200px;
+    margin: 0 220px;
 }
 @media (max-width:768px) {
     .projects {
         margin:0;
         padding: 0;
         height: 80vh;
+        margin: 0 20px;
     }
 }
 .about{
-    margin: 0 200px;
-    height: 60vh;
+    margin: 0 220px;
+    height: 70vh;
 }
 @media (max-width:768px) {
     .about {
         margin:0;
         padding: 0;
         height: 50vh;
+        margin: 0 20px;
     }
 }
+.contact {
+    margin: 0 40px;
+}
+
 @media (max-width:768px) {
     .contact {
-        margin:0;
         padding: 0;
         height: 120vh;
+        margin: 0 20px;
     }
 }
 .form1{
@@ -159,14 +171,6 @@ section {
     color: var(--primary-color--);
     font-weight: bold;
 }
-footer {
-    background-color: var(--first-color--);
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-
 .about_cnt {
     color: var(--first-color--);
 }
@@ -200,17 +204,25 @@ footer {
         margin-top: 30px;
     }
 }
-
+.mail_link a{
+    text-decoration: none;
+    color: var(--fifth-color--);
+}
+.mail_link a:hover{
+    color: var(--first-color--);
+}
 .skills{
     height: 40vh;
     justify-content: center;
     padding: 0 140px;
+    margin: 0 20px;
 }
 @media (max-width:768px){
     .skills{
-        margin-left: 1px !important;
+        /* margin-left: 1px !important; */
         height: 70vh;
         padding: 0;
+        margin: 0 20px;
     }
 }
 .skill{
